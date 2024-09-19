@@ -2,10 +2,11 @@
 https://router.vuejs.org/guide/advanced/extending-router-link.html */
 <template>
     <NavLink
-        class="button rounded-xl border-2 border-mantis bg-champagne-pink p-2 transition-all
-            block top-0 left-0 relative hover:-top-1 hover:-left-1 active:left-[0.5px]
-            active:shadow-none active:top-[0.5px] shadow-mantis hover:shadow-mantis-hover
-            [&>*]:size-6 [&>*]:text-davys-grey"
+        class="button rounded-xl border-2 size-12 border-mantis bg-champagne-pink p-2
+            transition-all flex items-center justify-center top-0 left-0 relative
+            hover:-top-1 hover:-left-1 active:left-[0.5px] active:shadow-none
+            active:top-[0.5px] shadow-mantis hover:shadow-mantis-hover [&>*]:size-6
+            [&>*]:text-davys-grey"
         :to="to"
     >
         <slot />
@@ -27,7 +28,7 @@ defineProps<{
 .button .tooltip {
     visibility: hidden;
     position: absolute;
-    top: 48px;
+    top: 54px;
     right: 0;
 
     font-size: 0.8rem;

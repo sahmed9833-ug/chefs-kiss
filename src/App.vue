@@ -24,7 +24,7 @@ import NavButton from './components/nav/NavButton.vue'
         </nav>
     </header>
 
-    <RouterView />
+    <RouterView class="m-auto max-w-[120ch]" />
 </template>
 
 <style scoped></style>
