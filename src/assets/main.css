@@ -4,4 +4,29 @@
 
 html {
     color: #474350;
+    background-color: #f3ffff;
+}
+
+.button .tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 54px;
+    right: 0;
+
+    font-size: 0.8rem;
+    color: #474350;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px;
+    background-color: #ffffff;
+    border: 2px solid #63c668;
+}
+.button:hover .tooltip {
+    visibility: visible;
+}
+
+@layer components {
+    .btn-secondary {
+        @apply button border-mantis shadow-mantis hover:shadow-mantis-hover [&>*]:text-davys-grey relative left-0 top-0 flex size-12 items-center justify-center rounded-xl border-2 bg-white p-2 transition-all hover:-left-1 hover:-top-1 active:left-[0.5px] active:top-[0.5px] active:shadow-none [&>*]:size-6;
+    }
 }

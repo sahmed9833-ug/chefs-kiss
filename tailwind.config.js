@@ -6,7 +6,7 @@ export default {
         extend: {
             colors: {
                 mantis: '#63c668',
-                'champagne-pink': '#F9E6DD',
+                azure: '#F3FFFF',
                 'davys-grey': '#474350'
             },
             boxShadow: {
